@@ -1,3 +1,5 @@
+package tree examples;
+
 public class treeinorder
  {
     public static class tree{
