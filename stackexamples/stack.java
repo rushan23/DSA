@@ -1,3 +1,4 @@
+package stackexamples;
 import java.util.Stack;
 
 public class stack {
