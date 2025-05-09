@@ -1,4 +1,3 @@
-package tree examples;
 
 public class treeinorder
  {

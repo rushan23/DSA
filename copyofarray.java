@@ -1,5 +1,3 @@
-package array;
-
 
 public class copyofarray {
     public static void main(String[] args) {

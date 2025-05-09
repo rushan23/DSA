@@ -1,4 +1,4 @@
-package arrays;
+
 import java.util.Scanner;
 
 class arrays{
@@ -14,6 +14,7 @@ class arrays{
            for (int j = 0; j < arr.length; j++) {
             if(arr[j]<35){
              System.err.print(" "+arr[j] +"at index" + j );
+                sc.close();
             }
         }
     }
