@@ -3,7 +3,7 @@ public class minimumarr {
        int[]  arr={1,3,4,5,7,10};
         int min =arr[0];
         for(int i = 0 ; i<=arr.length - 1 ; i++){
-            if(arr[i]<min){
+            if(arr[i]>min){
                 min=arr[i];
                
             }
