@@ -28,4 +28,5 @@ public class twodimensionalarraylist {
         }
     }
 }
+// multiplication in 2 d array see on chat gpt
 
