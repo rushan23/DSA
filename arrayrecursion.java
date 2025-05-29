@@ -1,0 +1,17 @@
+public class arrayrecursion {
+    public static void arra(int i,int[]arr){
+        if(i==arr.length){
+            return ;}
+            System.out.println(arr[i]);
+            arra(i+1, arr);
+
+        
+    }
+    public static void main(String[] args) {
+        int []arr={1,2,3,4,5};
+        String s="hello";
+
+        arra(0,arr);
+   
+    }
+}
