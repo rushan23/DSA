@@ -26,5 +26,18 @@ public class stringexample {
         for (char ele : arr) {
             System.out.print(ele + " ");
         }
+        System.err.println("");
+
+          String[] numbers = {"10", "5", "300", "2500"};
+String max =numbers[0];
+int maxval = Integer.parseInt(max);
+for(int i=1;i< numbers.length;i++){
+    int num = Integer.parseInt(numbers[i]);
+    if(num>maxval){
+        maxval = num;
+
+    }
+        }
+        System.out.println("String with maximum numeric value: " + maxval);
     }
 }
