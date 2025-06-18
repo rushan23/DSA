@@ -1,3 +1,4 @@
+package arr;
 public class arrayrecursion {
     public static void stri(int i,String s){
         if(i==s.length()){
