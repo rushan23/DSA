@@ -1,16 +1,14 @@
-class Node {
-    int data;
-    Node next;
-    Node prev;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
 class SinglyLinkedList {
     Node head;
+
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
 
     // Add First
     public void addFirst(int data) {
@@ -59,6 +57,27 @@ class SinglyLinkedList {
         temp.next = null;
     }
 
+    // Add in Middle (at index)
+    public void addMiddle(int index, int data) {
+        if (index == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node x = head;
+        for (int i = 0; i < index - 1; i++) {
+            if (x == null) {
+                System.out.println("Index out of bounds.");
+                return;
+            }
+            x = x.next;
+        }
+
+        Node n = new Node(data);
+        n.next = x.next;
+        x.next = n;
+    }
+
     // Print List
     public void printList() {
         Node temp = head;
@@ -68,7 +87,8 @@ class SinglyLinkedList {
         }
         System.out.println("null");
     }
-} 
+}
+
 public class singlell {
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
@@ -76,12 +96,15 @@ public class singlell {
         list.addFirst(10);
         list.addFirst(100);
         list.addLast(3100);
-        list.printList(); // Output: 20 -> 10 -> 30 -> null
+        list.printList(); // Output: 100 -> 10 -> 3100 -> null
 
         list.deleteFirst();
-        list.printList(); // Output: 10 -> 30 -> null
+        list.printList(); // Output: 10 -> 3100 -> null
 
         list.deleteLast();
         list.printList(); // Output: 10 -> null
+
+        list.addMiddle(1, 1000);
+        list.printList(); // Output: 10 -> 1000 -> null
     }
 }

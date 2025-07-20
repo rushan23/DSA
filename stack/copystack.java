@@ -18,7 +18,7 @@ public class copystack {
     public static Stack<Integer> reverse(Stack<Integer> s,Stack<Integer> s2){
           Stack<Integer> G = new Stack<>();
         while(!s.isEmpty()){
-            G.push(s.pop());
+            s2.push(s.pop());
         }
           while(!G.isEmpty()){
             s2.push(G.pop());
