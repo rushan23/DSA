@@ -62,6 +62,7 @@ for (int i = 0; i < n; i++) {
             System.err.println();
              
 
+
     }
     // wave zig zag
 System.err.println();
