@@ -10,6 +10,7 @@ public class sortstring {
                     char temp=ch[i];
                     ch[i]=ch[j];
                     ch[j]=temp;
+// sortig the string
 
     }
             }
